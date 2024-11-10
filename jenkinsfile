@@ -1,7 +1,12 @@
 pipeline {
     agent any
 
+        /*
+        Sample NPM React
+        Docker - Build and Test
+         */
     stages {
+        // Build Statge
         stage('Build') {
             agent {
                 docker {
@@ -20,6 +25,7 @@ pipeline {
                 '''
             }
         }
+        // Test Statge
         stage('Test') {
             agent {
                 docker {

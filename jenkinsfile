@@ -1,4 +1,3 @@
-static void main(String[] args) {
   pipeline {
     agent any
     stages {
